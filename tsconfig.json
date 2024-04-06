@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true, //When set to true, TypeScript allows for more seamless integration when importing CommonJS modules into ES6 modules.
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "target": "ES2015",
+    "forceConsistentCasingInFileNames": true, //In a cross-platform development environment, where some developers are working on Windows (case-insensitive file system) and others on macOS or Linux (case-sensitive file systems), inconsistencies in file casing can easily occur.
+    "isolatedModules": true,
+    "jsx": "react",
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true, //enables the ability to import JSON files directly into your TypeScript code as if they were modules.
+    "skipLibCheck": true, //Enabling skipLibCheck will skip type checking of these declaration files, which can lead to faster compilation times, especially in large projects with many dependencies.
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
