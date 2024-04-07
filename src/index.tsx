@@ -32,11 +32,11 @@ interface Props {
    */
   styleDropDownMenu?: string
   /** 
-   * Selected values
+   * Selected values variable (stateful value)
    */
   selectedValues: any
   /** 
-   * A UseState to set selectedValues variable
+   * A UseState function to update selectedValues variable
    */
   setSelectedValues: React.Dispatch<React.SetStateAction<any>>
 }
@@ -53,6 +53,22 @@ const CustomDropDown = ({
   selectedValues,
   setSelectedValues,
 }: Props) => {
+
+  if (!options) {
+    console.error("You are missing options props, and it must be [{displayName:'name', value:'value'}] format")
+    return;
+  }
+
+  if (!selectedValues) {
+    console.error("You are missing selectedValues props, a selected values variable (stateful value)")
+    return;
+  }
+
+  if (!setSelectedValues) {
+    console.error("You are missing setSelectedValues props, a UseState function to update selectedValues variable")
+    return;
+  }
+
   const [searchTerm, setSearchTerm] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [filteredOptions, setFilteredOptions] = useState(options);
