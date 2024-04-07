@@ -1,6 +1,5 @@
-# React Modal
-
-<p>The dropdown select list is frequently utilized across different projects. While we can easily implement a dropdown menu feature using <select>, it may not offer the best user experience. The summer-ui-react-dropdown, on the other hand, enhances usability by providing support for multiple select features and incorporating a search bar, allowing users to filter the list before making a selection. This modal component is customizable, enabling the creation of personalized placeholder messages and font styling to suit individual preferences.</p>
+# React Dropdown
+<p>The dropdown select list is frequently utilized across different projects. While we can easily implement a dropdown menu feature using select tag, it may not offer the best user experience. The summer-ui-react-dropdown, on the other hand, enhances usability by providing support for multiple select features and incorporating a search bar, allowing users to filter the list before making a selection. This modal component is customizable, enabling the creation of personalized placeholder messages and font styling to suit individual preferences.</p>
 
 ## Installation
 
@@ -11,8 +10,7 @@ npm i summer-ui-react-dropdown
 https://k18382003.github.io/react-modal-dropdown/
 
 ## Example
-
-```jsx
+```jss
 // App.js
 import ReactDropdown from 'summer-ui-react-dropdown';
 import { useState } from 'react';
