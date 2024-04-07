@@ -7,10 +7,22 @@ npm i summer-ui-react-dropdown
 
 ## Demo
 
-https://k18382003.github.io/react-modal-dropdown/
+https://k18382003.github.io/react-dropdown-demo/
+
+## Props
+| Props Name    | Description   | Data Type      | Required    |
+| ------------- | ------------- | -------------  | ------------- |
+| multipleSelect  | Multiple select | boolean  | NO  |
+| options  | The select options must be [{displayName:'name', value:'value'}] format  | object array  | YES  |
+| textbarPlaceHolder  | The placeholder text for the select input | string  | NO  |
+| textbarStyle  | Adding a class name to style select input | string  | NO  |
+| searchbarStyle  | Adding a class name to style search bar | string  | NO  |
+| styleDropDownMenu  | Adding a class name to style dropdown menu | string  | NO  |
+| selectedValues  | Selected values variable | stateful value  | YES  |
+| setSelectedValues  | Adding a class name to style dropdown menu | SetState function  | YES  |
 
 ## Example
-```jss
+```jsx
 // App.js
 import ReactDropdown from 'summer-ui-react-dropdown';
 import { useState } from 'react';
