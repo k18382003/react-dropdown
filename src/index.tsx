@@ -54,7 +54,7 @@ const CustomDropDown = ({
   setSelectedValues,
 }: Props) => {
 
-  if (!options) {
+  if (!options || !undefined) {
     console.error("You are missing options props, and it must be [{displayName:'name', value:'value'}] format")
     return;
   }

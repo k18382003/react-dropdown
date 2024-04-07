@@ -1,4 +1,5 @@
 # React Dropdown
+
 <p>The dropdown select list is frequently utilized across different projects. While we can easily implement a dropdown menu feature using select tag, it may not offer the best user experience. The summer-ui-react-dropdown, on the other hand, enhances usability by providing support for multiple select features and incorporating a search bar, allowing users to filter the list before making a selection. This modal component is customizable, enabling the creation of personalized placeholder messages and font styling to suit individual preferences.</p>
 
 ## Installation
@@ -10,18 +11,20 @@ npm i summer-ui-react-dropdown
 https://k18382003.github.io/react-dropdown-demo/
 
 ## Props
-| Props Name    | Description   | Data Type      | Required    |
-| ------------- | ------------- | -------------  | ------------- |
-| multipleSelect  | Multiple select | boolean  | NO  |
-| options  | The select options must be [{displayName:'name', value:'value'}] format  | object array  | YES  |
-| textbarPlaceHolder  | The placeholder text for the select input | string  | NO  |
-| textbarStyle  | Adding a class name to style select input | string  | NO  |
-| searchbarStyle  | Adding a class name to style search bar | string  | NO  |
-| styleDropDownMenu  | Adding a class name to style dropdown menu | string  | NO  |
-| selectedValues  | Selected values variable | stateful value  | YES  |
-| setSelectedValues  | Adding a class name to style dropdown menu | SetState function  | YES  |
+
+| Props Name         | Description                                                             | Data Type         | Required |
+| ------------------ | ----------------------------------------------------------------------- | ----------------- | -------- |
+| multipleSelect     | Multiple select                                                         | boolean           | NO       |
+| options            | The select options must be [{displayName:'name', value:'value'}] format | object array      | YES      |
+| textbarPlaceHolder | The placeholder text for the select input                               | string            | NO       |
+| textbarStyle       | Adding a class name to style select input                               | string            | NO       |
+| searchbarStyle     | Adding a class name to style search bar                                 | string            | NO       |
+| styleDropDownMenu  | Adding a class name to style dropdown menu                              | string            | NO       |
+| selectedValues     | Selected values variable                                                | stateful value    | YES      |
+| setSelectedValues  | Adding a class name to style dropdown menu                              | SetState function | YES      |
 
 ## Example
+
 ```jsx
 // App.js
 import ReactDropdown from 'summer-ui-react-dropdown';
@@ -42,7 +45,7 @@ const App = () => {
     console.log({ ...selectedValues });
 
     // Clearing the form after submission
-    setSelectedValues('');
+    setSelectedValues([]);
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -71,11 +74,11 @@ export default App;
   border: 1px solid blue;
 }
 
-.mysearchBar{
-  font-size: 1.5rem
+.mysearchBar {
+  font-size: 1.5rem;
 }
 
-.mydropDown li:hover{
+.mydropDown li:hover {
   background-color: red;
 }
 ```
