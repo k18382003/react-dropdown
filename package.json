@@ -1,6 +1,6 @@
 {
   "name": "summer-ui-react-dropdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom React Dropdown Component",
   "source": "src/index.js",
   "main": "dist/index.js",
