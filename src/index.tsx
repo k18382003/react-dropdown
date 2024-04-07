@@ -187,7 +187,7 @@ const CustomDropDown = ({
             readOnly
           />
           {isOpen && (
-            <ul className="options">
+            <ul className={`${styleDropDownMenu} options`}>
               <input
                 className={`search-bar ${searchbarStyle}`}
                 type="text"

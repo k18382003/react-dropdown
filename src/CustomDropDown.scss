@@ -25,6 +25,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style-type: none;
   box-sizing: border-box;
+  max-height: 200px;
+  overflow-y: scroll;
   z-index: 999;
 
   li {
