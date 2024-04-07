@@ -181,7 +181,7 @@ const CustomDropDown = ({
           <input
             type="text"
             placeholder={textbarPlaceHolder || 'Select...'}
-            value={selectedValues?.displayName}
+            value={selectedValues?.displayName || ''}
             onFocus={() => setIsOpen(true)}
             className={textbarStyle}
             readOnly
